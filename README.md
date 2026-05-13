@@ -1,4 +1,4 @@
-# 🧠 DevelopersHub Data Science & Analytics Internship
+# 🧠 Data Science Projects
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=flat&logo=python)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?style=flat&logo=jupyter)
@@ -6,26 +6,20 @@
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-purple?style=flat&logo=pandas)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat)
 
-> **Internship:** Data Science & Analytics  
-> **Company:** DevelopersHub Corporation  
-> **Duration:** May 2026  
-> **Notebooks:** Google Colab (.ipynb)  
-> **Tasks Completed:** 5 out of 5 ✅
-
 ---
 
-## 📌 About This Repository
+## 📌 About
 
-This repository contains all **5 completed project tasks** from my Data Science & Analytics Internship at **DevelopersHub Corporation**. Each task is a fully self-contained Jupyter Notebook covering the complete data science pipeline — from raw data loading and cleaning, through exploratory analysis and visualization, to machine learning model building and evaluation.
+A collection of **5 end-to-end Data Science projects** built with Python, each tackling a real-world problem using publicly available datasets. The projects cover the full data science pipeline — data loading, cleaning, exploratory analysis, visualization, model building, and performance evaluation.
 
-The projects span core data science problem types including **data visualization**, **binary classification**, **regression**, and **customer segmentation**, using real-world datasets from Kaggle and other public sources.
+Problem domains include **banking**, **healthcare**, **insurance**, and **customer analytics**, applying techniques across data visualization, binary classification, and regression.
 
 ---
 
 ## 📂 Repository Structure
 
 ```
-📦 DevelopersHub-Data-Science-Internship
+📦 Data-Science-Projects
  ┣ 📓 Task1_Iris_Visualization.ipynb
  ┣ 📓 Task2_Credit_Risk_Prediction.ipynb
  ┣ 📓 Task3_Customer_Churn_Prediction.ipynb
@@ -36,10 +30,10 @@ The projects span core data science problem types including **data visualization
 
 ---
 
-## 🗂️ Task Overview
+## 🗂️ Projects Overview
 
-| # | Task | Type | Dataset | Libraries |
-|---|------|------|---------|-----------|
+| # | Project | Type | Dataset | Libraries |
+|---|---------|------|---------|-----------|
 | 1 | Iris Dataset Exploration & Visualization | EDA & Visualization | Iris (seaborn built-in) | pandas, matplotlib, seaborn |
 | 2 | Credit Risk Prediction | Binary Classification | Loan Prediction (Kaggle) | scikit-learn, pandas, seaborn |
 | 3 | Customer Churn Prediction | Binary Classification | Churn Modelling (Kaggle) | scikit-learn, pandas, seaborn |
@@ -48,32 +42,32 @@ The projects span core data science problem types including **data visualization
 
 ---
 
-## 📓 Task Details
+## 📓 Project Details
 
 ---
 
-### ✅ Task 1 — Exploring and Visualizing the Iris Dataset
+### 📊 Project 1 — Exploring and Visualizing the Iris Dataset
 
-**Objective:** Understand how to load, inspect, and visualize a structured dataset using core Python libraries — with no machine learning model involved.
+**Objective:** Load, inspect, and visualize a structured dataset to uncover patterns and relationships between features using core Python visualization libraries.
 
 **Dataset:** Iris Dataset — built directly into seaborn, no download required.
 
 **Approach:**
 - Loaded and inspected the dataset using `.shape`, `.columns`, and `.head()`
-- Checked for missing values and reviewed statistical summaries
+- Reviewed statistical summaries and checked for missing values
 - Built scatter plots, histograms, box plots, a pair plot, and a correlation heatmap
 
 **Key Insights:**
 - Iris Setosa is fully separable from the other two species on petal dimensions alone
 - Petal length and petal width have a correlation of **0.96** — they carry nearly identical information
-- Sepal width is the weakest feature for species classification
-- The dataset is perfectly balanced with no missing values
+- Sepal width is the weakest feature for distinguishing species
+- The dataset is perfectly balanced with 50 samples per species and no missing values
 
 ---
 
-### ✅ Task 2 — Credit Risk Prediction
+### 🏦 Project 2 — Credit Risk Prediction
 
-**Objective:** Predict whether a loan applicant is likely to default, helping banks make faster and safer lending decisions.
+**Objective:** Predict whether a loan applicant is likely to default, helping financial institutions make faster and safer lending decisions.
 
 **Dataset:** [Loan Prediction Dataset — Kaggle](https://www.kaggle.com/datasets/altruistdelhite04/loan-prediction-problem-dataset)
 
@@ -85,20 +79,20 @@ The projects span core data science problem types including **data visualization
 
 **Key Insights:**
 - Credit history is the single most powerful predictor of loan approval
-- Higher income alone does not guarantee approval without good credit history
+- Higher income alone does not guarantee approval without a good credit history
 - Logistic Regression achieved **~80–82% accuracy** and is preferred for interpretability
-- The model can automate initial screening and significantly reduce processing time
+- The model can automate initial loan screening and significantly reduce manual processing time
 
 ---
 
-### ✅ Task 3 — Customer Churn Prediction (Bank Customers)
+### 📉 Project 3 — Customer Churn Prediction (Bank Customers)
 
-**Objective:** Identify which bank customers are at risk of leaving so the bank can take proactive retention action.
+**Objective:** Identify which bank customers are at risk of leaving so the bank can take proactive retention action before losing them.
 
 **Dataset:** [Churn Modelling Dataset — Kaggle](https://www.kaggle.com/datasets/shrutimechlearn/churn-modelling)
 
 **Approach:**
-- Dropped non-predictive identifiers (RowNumber, CustomerId, Surname)
+- Dropped non-predictive identifier columns (RowNumber, CustomerId, Surname)
 - Applied Label Encoding to Gender and One-Hot Encoding to Geography
 - Built visualizations for age, balance, number of products, salary, and credit score
 - Trained **Random Forest** and **Gradient Boosting** classifiers
@@ -112,46 +106,46 @@ The projects span core data science problem types including **data visualization
 
 ---
 
-### ✅ Task 4 — Predicting Insurance Claim Amounts
+### 🏥 Project 4 — Predicting Insurance Claim Amounts
 
-**Objective:** Estimate how much a customer will be charged for medical insurance based on personal attributes, helping insurers set fair and accurate premiums.
+**Objective:** Estimate medical insurance charges based on personal attributes such as age, BMI, and smoking status to help insurers set accurate and fair premiums.
 
-**Dataset:** [Medical Cost Personal Dataset — Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance) *(also available via public GitHub mirror — auto-downloads in notebook)*
+**Dataset:** [Medical Cost Personal Dataset — Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance) *(also auto-downloads via public GitHub mirror — no Kaggle account needed)*
 
 **Approach:**
 - Label encoded sex and smoker; One-Hot encoded region
-- Visualized the impact of BMI, age, and smoking status on charges using scatter plots, box plots, and violin plots
-- Trained **Linear Regression** (baseline) and **Random Forest Regressor**
+- Visualized the impact of BMI, age, and smoking status on charges
+- Trained **Linear Regression** as a baseline and **Random Forest Regressor** for non-linear patterns
 - Evaluated using **MAE**, **RMSE**, and **R²**
-- Plotted actual vs predicted values and residual plots
+- Plotted actual vs predicted values and a residual plot
 
 **Key Insights:**
-- Smoking is the most powerful predictor — smokers pay **3–4× more** than non-smokers
-- Obese smokers (BMI > 30) represent the highest-cost segment by a large margin
+- Smoking is the most powerful predictor — smokers pay **3–4× more** than non-smokers with identical profiles
+- Obese smokers (BMI > 30) form the highest-cost segment by a significant margin
 - Random Forest significantly outperformed Linear Regression (**R² ~0.87 vs ~0.75**)
-- Region has minimal impact on charges — pricing is fairly uniform across US regions
+- Region has minimal impact — insurance pricing is fairly uniform across US regions
 
 ---
 
-### ✅ Task 5 — Personal Loan Acceptance Prediction
+### 🎯 Project 5 — Personal Loan Acceptance Prediction
 
-**Objective:** Predict which customers are most likely to accept a personal loan offer, enabling targeted and cost-efficient marketing campaigns.
+**Objective:** Predict which bank customers are most likely to accept a personal loan offer, enabling targeted and cost-efficient marketing campaigns.
 
-**Dataset:** [Bank Loan Modelling Dataset — Kaggle](https://www.kaggle.com/datasets/itsmesunil/bank-loan-modelling) *(notebook also includes a synthetic fallback dataset if the URL is unavailable)*
+**Dataset:** [Bank Loan Modelling Dataset — Kaggle](https://www.kaggle.com/datasets/itsmesunil/bank-loan-modelling) *(notebook includes a synthetic fallback dataset if the URL is unavailable)*
 
 **Approach:**
-- Cleaned data — removed invalid entries, dropped the ID column
-- Explored income, age, education, family size, credit card spend, and CD account
+- Cleaned data — removed invalid entries and dropped the ID column
+- Explored income, age, education, family size, credit card spend, and CD account holdings
 - Trained **Logistic Regression**, **Decision Tree**, and **Random Forest** classifiers
 - Evaluated with accuracy, confusion matrix, classification report, and **ROC-AUC curve**
-- Segmented customers by income group and identified the ideal target profile
+- Segmented customers by income group to identify the highest-value target profile
 
 **Key Insights:**
 - Income is the #1 predictor — customers earning above $100k accept at a far higher rate
-- CD Account holders are the most valuable marketing target segment
+- CD Account holders are the most valuable target segment for loan campaigns
 - Graduate and postgraduate customers accept significantly more than undergraduates
 - Random Forest achieved **~95–96% accuracy** and an **AUC of ~0.98**
-- Using this model, a bank can reduce marketing spend by ~75–80% while maintaining conversion quality
+- Using this model, a bank could reduce marketing spend by ~75–80% while maintaining conversion quality
 
 ---
 
@@ -171,7 +165,7 @@ The projects span core data science problem types including **data visualization
 
 ## 🚀 How to Run Any Notebook
 
-### Option 1 — Google Colab (Recommended, no setup required)
+### Option 1 — Google Colab (Recommended — no setup needed)
 1. Open [colab.research.google.com](https://colab.research.google.com)
 2. Click **File → Open Notebook → GitHub**
 3. Paste this repository URL and select any notebook
@@ -181,8 +175,8 @@ The projects span core data science problem types including **data visualization
 ### Option 2 — Run Locally
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/DevelopersHub-Data-Science-Internship.git
-cd DevelopersHub-Data-Science-Internship
+git clone https://github.com/YOUR_USERNAME/Data-Science-Projects.git
+cd Data-Science-Projects
 
 # Install dependencies
 pip install pandas numpy matplotlib seaborn scikit-learn jupyter
@@ -195,32 +189,24 @@ jupyter notebook
 
 ## 📥 Dataset Sources
 
-| Task | Dataset | Source |
-|------|---------|--------|
-| Task 1 | Iris Dataset | Built into seaborn — `sns.load_dataset('iris')` |
-| Task 2 | Loan Prediction Dataset | [Kaggle](https://www.kaggle.com/datasets/altruistdelhite04/loan-prediction-problem-dataset) |
-| Task 3 | Churn Modelling Dataset | [Kaggle](https://www.kaggle.com/datasets/shrutimechlearn/churn-modelling) |
-| Task 4 | Medical Cost Personal Dataset | [Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance) / Auto-download |
-| Task 5 | Bank Loan Modelling Dataset | [Kaggle](https://www.kaggle.com/datasets/itsmesunil/bank-loan-modelling) / Synthetic fallback |
+| Project | Dataset | Source |
+|---------|---------|--------|
+| Project 1 | Iris Dataset | Built into seaborn — `sns.load_dataset('iris')` |
+| Project 2 | Loan Prediction Dataset | [Kaggle](https://www.kaggle.com/datasets/altruistdelhite04/loan-prediction-problem-dataset) |
+| Project 3 | Churn Modelling Dataset | [Kaggle](https://www.kaggle.com/datasets/shrutimechlearn/churn-modelling) |
+| Project 4 | Medical Cost Personal Dataset | [Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance) / Auto-download |
+| Project 5 | Bank Loan Modelling Dataset | [Kaggle](https://www.kaggle.com/datasets/itsmesunil/bank-loan-modelling) / Synthetic fallback |
 
-> **Note:** Tasks 1 and 4 do not require a Kaggle account. Tasks 2, 3, and 5 include auto-download cells that work without logging in. If they fail, simply download the CSV from the Kaggle link and upload it to Colab using the manual upload cell provided inside each notebook.
+> **Note:** Projects 1 and 4 do not require a Kaggle account. Projects 2, 3, and 5 include auto-download cells that work without logging in. If they fail, download the CSV from the Kaggle link and upload it to Colab using the manual upload cell provided inside each notebook.
 
 ---
 
 ## 📊 Results Summary
 
-| Task | Model Used | Best Metric |
-|------|-----------|-------------|
-| Task 1 | No model — EDA only | Visual insights across 3 species |
-| Task 2 | Logistic Regression | Accuracy ~80–82% |
-| Task 3 | Random Forest | Accuracy ~86–87% |
-| Task 4 | Random Forest Regressor | R² ~0.87, MAE ~$2,500 |
-| Task 5 | Random Forest | Accuracy ~95–96%, AUC ~0.98 |
-
----
-
-## 🙏 Acknowledgements
-
-- **DevelopersHub Corporation** for providing this internship opportunity and structured task list
-- **Kaggle** for the publicly available datasets used across tasks 2–5
-- **Scikit-learn, Pandas, Seaborn, and Matplotlib** open-source communities
+| Project | Best Model | Best Metric |
+|---------|-----------|-------------|
+| Project 1 | No model — EDA only | Visual insights across 3 species |
+| Project 2 | Logistic Regression | Accuracy ~80–82% |
+| Project 3 | Random Forest | Accuracy ~86–87% |
+| Project 4 | Random Forest Regressor | R² ~0.87, MAE ~$2,500 |
+| Project 5 | Random Forest | Accuracy ~95–96%, AUC ~0.98 |
